@@ -4,6 +4,7 @@ public class ValidationKeywords extends GenericKeywords{
 
 	public void validateTitle() {
 		log("Validating Title");
+		
 
 	}
 

@@ -1,5 +1,8 @@
 package com.amazon.testcases;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -10,8 +13,12 @@ public class LoginTest extends AmazonBaseTest  {
 
 	@Test
 	public void login() throws InterruptedException, IOException {
-
+	
+		
+	
 	app.OpenBrowser("chrome");
+	
+	
 	app.navigate("url");
 	
 	
@@ -20,6 +27,7 @@ public class LoginTest extends AmazonBaseTest  {
 	
 	
 	//will type in username filed
+	
 	app.type("username_xpath", "8210866966");
 	
 	//cick on continue button present in under username
@@ -34,9 +42,14 @@ public class LoginTest extends AmazonBaseTest  {
 	app.click("signbutton_xpath");
 	
 	
-	Thread.sleep(7000);
+
+//     assert.assertTrue(, "Sign in not succesful");
+	
+
 	app.type("search_xpath", "headphones");
 	app.click("searchicon_xpath");
+	
+	
 	
 
 	

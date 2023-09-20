@@ -28,7 +28,7 @@ public class ApplicationKeywords extends ValidationKeywords {
 	}
 
 	public void login() {
-		// Implement the login method
+		
 	}
 
 	public void setReport(ExtentTest test) {
